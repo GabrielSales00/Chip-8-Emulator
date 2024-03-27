@@ -1,6 +1,6 @@
 # Chip-8-Emulator
 
-Emulator for the chip-8 that will load a tetris rom by default if no rom is specified in the args. This was made by pure curiosity and it forced me to be intimate with low level programming. It's a very simple machine, so it's a fun learning experience!
+Emulator for the chip-8 that will load a tetris rom by default if no rom is specified in the args. This project was made out of pure curiosity and it forced me to be intimate with low level programming. It's a very simple machine, so it's a fun learning experience!
 
 # Dependencies:
 
