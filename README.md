@@ -9,17 +9,17 @@ You will need the lSDL2 interface library for C/C++ installed.
 # Compilation:
 
 Run the following command:
-gcc main.c -o <program> -lSDL2
+gcc main.c -o program_name -lSDL2
 
 # Running the program:
 
 Run the following command on your terminal:
-./<program>
+./program_name
 
 OR
 
 
-./<program> ./address/to/ch8rom
+./program_name ./address/to/ch8rom
 
 # Materials that made this project possible:
 
