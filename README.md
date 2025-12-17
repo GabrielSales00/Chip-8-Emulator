@@ -1,6 +1,6 @@
 # CHIP-8 Emulator
 
-A simple **CHIP-8 emulator written in C**, created out of pure curiosity and as a hands-on way to explore low-level programming and virtual machines.
+A simple **CHIP-8 emulator written in C**, created out of pure curiosity and as a way to explore virtual machines.
 
 CHIP-8 itself is a simple virtual machine, which requires specifications and knowledge very close to those of real hardware, making it an excellent starting point for learning how emulators work. This project implements the CHIP-8 instruction set and provides basic graphics and input using the **SDL2**.
 
