@@ -7,15 +7,10 @@ Chip 8 emulator
 */
 
 
-#include <SDL2/SDL.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include "include/chip8window.h"
 
-
-typedef struct Screen {
-    SDL_Window * window;
-    SDL_Renderer * renderer;
-    SDL_Texture * texture;
-} Screen;
 
 Screen * newScreen(const char * title, int height, int width, int textureWidth, int textureHeight) {
     Screen * screen;

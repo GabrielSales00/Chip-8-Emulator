@@ -1,27 +1,59 @@
-# Chip-8-Emulator
+# CHIP-8 Emulator
 
-Emulator for the chip-8 that will load a tetris rom by default if no rom is specified in the args. This project was made out of pure curiosity and it forced me to be intimate with low level programming. It's a very simple machine, so it's a fun learning experience!
+A simple **CHIP-8 emulator written in C**, created out of pure curiosity and as a hands-on way to explore low-level programming and virtual machines.
 
-# Dependencies:
+CHIP-8 itself is a simple virtual machine, which requires specifications and knowledge very close to those of real hardware, making it an excellent starting point for learning how emulators work. This project implements the CHIP-8 instruction set and provides basic graphics and input using the **SDL2**.
 
-You will need the lSDL2 interface library for C/C++ installed.
+---
 
-# Compilation:
+## Features
 
-Run the following command:
-gcc main.c -o program_name -lSDL2
+- Complete CHIP-8 virtual machine implementation
+- Supports most standard CHIP-8 instructions
+- Uses **SDL2** for graphics, input, and frequency handling
+- Loads ROMs through the argument
 
-# Running the program:
+---
 
-Run the following command on your terminal:
-./program_name
+## Dependencies
 
-OR
+You will need the **SDL2 development library** installed:
+
+### Linux (Debian/Ubuntu)
+```bash
+sudo apt install libsdl2-2.0-0
+```
+
+---
+
+## Building
+
+At the local folder, run the following commands:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
+## Executing
+
+Add executing permissions to the binary:
+
+```bash
+chmod +x ./chip8_emu
+```
 
 
-./program_name ./address/to/ch8rom
+Run the emulator as follows:
 
-# Materials that made this project possible:
+```bash
+./chip8_emu <path/to/rom>
+```
+---
+
+## Materials that made this project possible:
 
 Building and understanding a Virtual Machine in 2hrs (CHIP-8 Emulator) : https://www.youtube.com/watch?v=jWpbHC6DtnU
 

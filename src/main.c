@@ -10,14 +10,15 @@ Chip 8 emulator
 #include <stdbool.h>
 #include <stdint.h>
 #include <time.h>
-#include "chip8window.h"
-#include "instructions.h"
+#include "include/chip8window.h"
+#include "include/chip8.h"
 
 int main(int argc, char * argv[]) {
     char const * address = argv[1];
 
     if (address == NULL) { //will load tetris by default if no game is specified.
-        address = "./CH8_roms/tetris.ch8";
+        printf("Please use the rom_path as the arg.\n");
+        return -1;
     }
 
     Screen * screen = newScreen("Chip 8 emulator by Gabriel Sales", SCREEN_HEIGHT * 10, SCREEN_WIDTH * 10, SCREEN_WIDTH, SCREEN_HEIGHT);
